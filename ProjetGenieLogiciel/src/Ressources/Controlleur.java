@@ -10,11 +10,8 @@ public class Controlleur {
 	@SuppressWarnings("null")
 	public static void choisirColis(Colis colisSelectionne) {
 
-
-		bdd.mColisChoisis.add(colisSelectionne);
-		for (Colis colis: bdd.mColisChoisis) {
-			System.out.println(colis.getDesignation());
-		}
+		BddManager.getInstance().ajouterColis(colisSelectionne);
+		
 
 	}
 

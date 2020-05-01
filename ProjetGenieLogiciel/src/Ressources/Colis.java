@@ -26,12 +26,14 @@ public boolean colisFaisable() {
 	while (it.hasNext()) {
 		Map.Entry<Article, Integer> c = it.next();
 		
-		
-		if (c.getValue() <= bdd.articlesDispo.get(c.getKey())) {
+		if(BddManager.getInstance().getAllInventaire().containsKey(c.getKey())) {
+		if ((c.getValue() >= BddManager.getInstance().getAllInventaire().get(c.getKey()))) {
 			
-			return true;
+			return false;
 		}
 
+	}
+	return true;
 	}
 	return false;
 }

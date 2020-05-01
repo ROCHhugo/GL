@@ -140,6 +140,11 @@ public class BddManager {
 	    }
 	    return Inventaire;
 	}
+
+	public void ajouterColis(Colis colisSelectionne) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 
