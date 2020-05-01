@@ -21,10 +21,13 @@ public class Controlleur {
 	public Map<Article, Integer> afficherContenuColis(Colis colis) {
 		return colis.getArticles();
 	}
-	
-	public static void passerAuchoixDuTransport(Node e) {
-		Vue1erePhase.changerChild(e);
+
+	public static void finChoix(String nomTransportChoisi) {
+		// TODO Auto-generated method stub
+		
 	}
+	
+	
 
 	
 

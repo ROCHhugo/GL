@@ -5,8 +5,8 @@ import java.util.List;
 public class Transport {
 
 	private String nomTransport;
-	private double volumeCapacite;
-	private double poidsCapacite;
+	public double volumeCapacite;
+	public double poidsCapacite;
 	private boolean disponibilite;
 	private List<Integer> numerosColis;
 	

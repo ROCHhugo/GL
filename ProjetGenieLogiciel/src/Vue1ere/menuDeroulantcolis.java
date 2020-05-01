@@ -21,13 +21,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
 public class menuDeroulantcolis extends Parent {
-	Colis coco;
 
 	public menuDeroulantcolis() {
-		Button bValiderChoix = new Button("Valider choix");
-		bValiderChoix.setTranslateX(670);
-		bValiderChoix.setTranslateY(-20);
-		this.getChildren().add(bValiderChoix);
 		
 		Text choisissezLesColis = new Text("Sélectionnez les colis à emporter");
 		choisissezLesColis.setFont(new Font(20));
@@ -124,10 +119,7 @@ public class menuDeroulantcolis extends Parent {
 					}
 				}});
 			
-			bValiderChoix.setOnMouseClicked(new EventHandler<MouseEvent>() {
-				public void handle(MouseEvent ke) {
-					Controlleur.passerAuchoixDuTransport;
-				}});
+			
 	}}
 
 	/*
